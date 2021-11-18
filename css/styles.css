@@ -86,6 +86,46 @@
   color: var(--bs-orange);
 }
 
+/*--------------------------------------------------------------
+# Team
+--------------------------------------------------------------*/
+.team .member {
+  position: relative;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  transition: 0.5s;
+}
+.team .member .pic {
+  overflow: hidden;
+  width: 130px;
+  border-radius: 50%;
+}
+.team .member .pic img {
+  transition: ease-in-out 0.3s;
+}
+.team .member:hover {
+  transform: translateY(-10px);
+}
+.team .member h4 {
+  font-weight: 700;
+  margin-bottom: 5px;
+  font-size: 20px;
+  color: #37517e;
+}
+.team .member span {
+  display: block;
+  font-size: 15px;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 500;
+}
+.team .member p {
+  margin: 10px 0 0 0;
+  font-size: 14px;
+}
+
 /* Preloader */
 #preloader {
   position: fixed;
@@ -5015,10 +5055,9 @@ fieldset:disabled .btn {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 0 1rem 2rem;
   font-size: 1rem;
   color: #212529;
-  text-align: left;
   background-color: #fff;
   border: 0;
   border-radius: 0;
@@ -5102,6 +5141,7 @@ fieldset:disabled .btn {
 
 .accordion-body {
   padding: 1rem 1.25rem;
+  font-size: 13px;
 }
 
 .accordion-flush .accordion-collapse {
