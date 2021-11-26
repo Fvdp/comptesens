@@ -361,7 +361,7 @@ sup {
 
 a {
   color: #37517e;
-  text-decoration: underline;
+  text-decoration: none;
 }
 a:hover {
   color: #37517e;
