@@ -33,20 +33,27 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css"
       rel="stylesheet"
     />
-
+    <!-- Glightbox -->
+    <link
+      href="assets/vendor/glightbox/css/glightbox.min.css"
+      rel="stylesheet"
+    />
+  <!-- Vendor autres -->
     <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
-    <!-- Navigation-->
+<!-- Navigation-->
     <nav
       class="navbar navbar-expand-lg navbar-light fixed-top py-3"
       id="mainNav"
     >
       <div class="container px-4 px-lg-5">
-        <a class="navbar-brand" href="#page-top">ComptéSens</a>
+        <a class="navbar-brand" href="#page-top"><img src="assets/img/logo_comptesens-250x46.png" alt="Logo Comptésens"></a>
         <button
           class="navbar-toggler navbar-toggler-right"
           type="button"
@@ -76,7 +83,7 @@
         </div>
       </div>
     </nav>
-    <!-- Masthead-->
+<!-- Masthead-->
     <header class="masthead">
       <div
         class="container px-4 px-lg-5 h-100"
@@ -104,140 +111,57 @@
               Nous vous accompagons dans tous vos projets de création, cession,
               acquisition et bien plus encore...
             </p>
-            <a class="btn btn-primary btn-xl" href="#services">En savoir +</a>
+            <a class="btn btn-primary btn-xl" href="#services">Nos services...</a>
           </div>
         </div>
       </div>
     </header>
-    <!-- Services-->
-    <section class="page-section" id="services">
+<!-- Services-->
+    <section class="page-section" id="services" data-aos="fade-up">
       <div class="container px-4 px-lg-5">
-        <h2 class="text-center mt-0" data-aos="fade-down">Services</h2>
-        <hr class="divider" data-aos="fade-down" />
+        <h2 class="text-center mt-0">Services</h2>
+        <hr class="divider" />
         <div class="row gx-4 gx-lg-5">
-          <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in-up">
+          <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-2">
               <div class="mb-2">
                 <i class="bi-puzzle fs-1 text-primary"></i>
-              </div>
-              <h3 class="h4 mb-2">Expertise comptable</h3>
-              <p class="text-muted">
-                <ul class="list-unstyled text-start text-muted">
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Production de vos comptes annuels
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Déclarations fiscales
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Bulletins de salaires, déclarations sociales et gestion du contrat de travail
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Documents de gestion
-                    </p>
-                  </li>
-                </ul>
-              </p>
+              </div>            
+                <h4 class="text-center pb-4">Expert-comptable</h4>
+                <a class="btn btn-outline-primary btn-sm" href="#expert">Détails</a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in-up">
+          <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-2">
               <div class="mb-2">
                 <i class="bi-people-fill fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Disponibilité proximité</h3>
-              <p class="text-muted mb-0">
-                <ul class="list-unstyled text-start text-muted">
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                      Réponse dans les 72 heures                    
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Accompagnement pour projets de création, cession, acquisition ou cessation d'activité
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Accompagnement recherche financement
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Accompagnement en situation de crise
-                    </p>
-                  </li>
-                </ul>
-              </p>
+              <h3 class="h4 pb-4">Disponibilité</h3>
+              <a class="btn btn-outline-primary btn-sm" href="#disponible">Détails</a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in-up">
+          <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-2">
               <div class="mb-2">
                 <i class="bi-display fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Outils digital</h3>
-              <p class="text-muted mb-0">
-                <ul class="list-unstyled text-start text-muted">
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Gain de temps et de productivité
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Vue comptable en temps réel et permanent
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Fluidification du travail collaboratif
-                    </p>
-                  </li>
-                  <li>
-                    <i class="li-service bi bi-check-lg"></i>
-                    <p class="fw-light ps-5">
-                    Adaptation rapide aux nouvelles réglementations
-                    </p>
-                  </li>
-                </ul>
-              </p>
+              <h3 class="h4 pb-4">Outils digital</h3>
+              <a class="btn btn-outline-primary btn-sm" href="#digital">Détails</a>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 text-center" data-aos="zoom-in-up">
+          <div class="col-lg-3 col-md-6 text-center">
             <div class="mt-2">
               <div class="mb-2">
                 <i class="bi-file-earmark-check fs-1 text-primary"></i>
               </div>
-              <h3 class="h4 mb-2">Droit d'entreprise</h3>
-              <p class="text-muted mb-0">
-                #Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Eli
-              </p>
+              <h3 class="h4 pb-4">Droit d'entreprise</h3>
+              <a class="btn btn-outline-primary btn-sm" href="#droit">Détails</a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- About-->
+<!-- Qui sommes nous -->
     <section class="page-section bg-bleu" id="about">
       <div
         class="container px-4 px-lg-5"
@@ -245,7 +169,7 @@
         data-aos-delay="200"
       >
         <div class="row gx-4 gx-lg-5 justify-content-center">
-          <div class="col-lg-12">
+          <sect class="col-lg-12">
             <h2 class="text-white mt-0 text-center">Qui sommes nous ?</h2>
             <hr class="divider" />
             <p class="text-white-75 mb-4 text-center">
@@ -253,7 +177,6 @@
               années d’expériences professionnelles, une équipe de « qu’un cas »
               à votre service !
             </p>
-            <!-- ======= Team Section ======= -->
       <section id="team" class="team section-bg">
         <div class="container-fluid text-center" data-aos="fade-up">
           <div class="row">
@@ -360,89 +283,453 @@
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </section>
-      <!-- End Team Section -->
-        </div>
-      </div>
     </section>
-    <!-- devises-->
-    <section class="page-section" id="services">
+      <!-- End Team Section -->
+<!-- Expert comptable -->
+      <section class="page-section" id="expert" data-aos="fade-up">
+        <div class="container px-4 px-lg-5">
+          <div class="text-center mt-0 mb-5">
+            <i class="bi bi-puzzle fs-1"></i>
+            <h2>Expertise comptable</h2>
+            <hr class="divider" />
+            <p class="text-muted">
+              <ul class="list-unstyled text-start text-muted">
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                  Production de vos comptes annuels
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                  Déclarations fiscales
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                  Bulletins de salaires, déclarations sociales et gestion du contrat de travail
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                  Documents de gestion
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- End Expert comptable -->
+<!-- Disponibilité -->
+      <section class="page-section bg-bleu text-white" id="disponible" data-aos="fade-up">
+        <div class="container px-4 px-lg-5">
+          <div class="text-center mt-0 mb-5">
+            <i class="bi bi-people-fill fs-1"></i>
+            <h2>Disponibilité</h2>
+            <hr class="divider" />
+            <p class="text-muted mb-0">
+              <ul class="list-unstyled text-start text-muted">
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light text-white ps-5">
+                    Réponse dans les 72 heures                    
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light text-white ps-5">
+                  Accompagnement pour projets de création, cession, acquisition ou cessation d'activité
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light text-white ps-5">
+                  Accompagnement recherche financement
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light text-white ps-5">
+                  Accompagnement en situation de crise
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </section>
+    <!-- End Disponibilité -->
+<!-- digital -->
+    <section class="page-section" id="digital" data-aos="fade-up">
       <div class="container px-4 px-lg-5">
         <div class="text-center mt-0 mb-5">
-          <h2>Se rencontrer...</h2>
+          <i class="bi bi-display fs-1"></i>
+          <h2>Outils digitals</h2>
           <hr class="divider" />
-          <p>
-            Prendre le temps d’écouter et de questionner, pour voir venir les changements.
-            <br>
-            Conseiller et agir pour accompagner ces changements
+          <p class="text-muted mb-0">
+            <ul class="list-unstyled text-start text-muted">
+              <li>
+                <i class="li-service bi bi-check-lg"></i>
+                <p class="fw-light ps-5">
+                Gain de temps et de productivité
+                </p>
+              </li>
+              <li>
+                <i class="li-service bi bi-check-lg"></i>
+                <p class="fw-light ps-5">
+                Vue comptable en temps réel et permanent
+                </p>
+              </li>
+              <li>
+                <i class="li-service bi bi-check-lg"></i>
+                <p class="fw-light ps-5">
+                Fluidification du travail collaboratif
+                </p>
+              </li>
+              <li>
+                <i class="li-service bi bi-check-lg"></i>
+                <p class="fw-light ps-5">
+                Adaptation rapide aux nouvelles réglementations
+                </p>
+              </li>
+            </ul>
           </p>
         </div>
-        <div class="row">
-          <div
-            class="col-xl-3 col-md-6 d-flex align-items-stretch"
-            data-aos="zoom-in"
-            data-aos-delay="100"
-          >
-            <div class="icon-box text-center">
-              <h4><i class="bi bi-ear mx-2 text-primary"></i><a href="">Écouter...</a></h4>
-              <p>
-                Vos besoins, vos attentes, ce à quoi vous avez pensé et réfléchi
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-            data-aos="zoom-in"
-            data-aos-delay="200"
-          >
-            <div class="icon-box text-center">
-              <h4><i class="bi bi-question-circle mx-2 text-primary"></i><a href="">Questionner...</a></h4>
-              <p>
-                La situation, le contexte, ce à quoi vous n’avez pas pensé
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-            data-aos="zoom-in"
-            data-aos-delay="300"
-          >
-            <div class="icon-box text-center">
-              <h4><i class="bi bi-clipboard-check mx-2 text-primary"></i><a href="">Conseiller...</a></h4>
-              <p>
-                la situation, le contexte, ce à quoi vous n’avez pas pensé
-              </p>
-            </div>
-          </div>
-
-          <div
-            class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-            data-aos="zoom-in"
-            data-aos-delay="400"
-          >
-            <div class="icon-box text-center">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4><i class="bi bi-graph-up-arrow mx-2 text-primary"></i><a href="">Agir...</a></h4>
-              <p>
-                Vous accompagner dans la mise en œuvre de vos projets, de vos obligations
-              </p>
-            </div>
-          </div>
+      </div>
+    </section>
+    <!-- End digital -->
+<!-- Droit -->
+    <section class="page-section bg-bleu text-white" id="droit" data-aos="fade-up">
+      <div class="container px-4 px-lg-5">
+        <div class="text-center mt-0 mb-5">
+          <i class="bi bi-file-earmark-check fs-1"></i>
+          <h2>Droit d'entreprise</h2>
+          <hr class="divider" />
+          <p class="text-muted mb-0">
+            #Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Eli
+          </p>
         </div>
       </div>
     </section>
-    <!-- Call to action-->
-    <section class="page-section bg-orange text-white">
-      <div class="container px-4 px-lg-5 text-center" data-aos="zoom-in">
-        <h2 class="mb-4">Liens, notes d'information et vidéos...</h2>
-        <a class="btn btn-light btn-xl" href="#">C'est par ici !</a>
+    <!-- End Droit -->
+<!-- Call to action-->
+<section class="page-section">
+  <div class="container px-4 px-lg-5 text-center" data-aos="zoom-in">
+    <div class="text-center mt-0 mb-5">
+      <p>
+        Prendre le temps d’écouter et de questionner, pour voir venir les changements.
+        <br>
+        Conseiller et agir pour accompagner ces changements
+      </p>
+    </div>
+    <div class="row">
+      <div
+        class="col-xl-3 col-md-6 d-flex align-items-stretch"
+        data-aos="zoom-in"
+        data-aos-delay="100"
+      >
+        <div class="icon-box text-center">
+          <h4><i class="bi bi-ear mx-2 text-primary"></i><a href="">Écouter...</a></h4>
+          <p>
+            Vos besoins, vos attentes, ce à quoi vous avez pensé et réfléchi
+          </p>
+        </div>
       </div>
-    </section>
+
+      <div
+        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+        data-aos="zoom-in"
+        data-aos-delay="200"
+      >
+        <div class="icon-box text-center">
+          <h4><i class="bi bi-question-circle mx-2 text-primary"></i><a href="">Questionner...</a></h4>
+          <p>
+            La situation, le contexte, ce à quoi vous n’avez pas pensé
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+        data-aos="zoom-in"
+        data-aos-delay="300"
+      >
+        <div class="icon-box text-center">
+          <h4><i class="bi bi-clipboard-check mx-2 text-primary"></i><a href="">Conseiller...</a></h4>
+          <p>
+            la situation, le contexte, ce à quoi vous n’avez pas pensé
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+        data-aos="zoom-in"
+        data-aos-delay="400"
+      >
+        <div class="icon-box text-center">
+          <h4><i class="bi bi-graph-up-arrow mx-2 text-primary"></i><a href="">Agir...</a></h4>
+          <p>
+            Vous accompagner dans la mise en œuvre de vos projets, de vos obligations
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="btn btn-primary btn-xl" href="#">Contactez-nous maintenant !</a>
+  </div>
+</section>
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio bg-primary page-section">
+  <div class="container px-4 px-lg-5" data-aos="fade-up">
+    <div class="text-center text-white mt-0 mb-5">
+      <h2>Liens utiles</h2>
+      <hr class="divider" />
+      <p class="text-white mb-0">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+      </p>
+    </div>
+
+    <ul
+      id="portfolio-flters"
+      class="d-flex text-white justify-content-center"
+      data-aos="fade-up"
+      data-aos-delay="100"
+    >
+      <li data-filter="*" class="filter-active text-white">Tout afficher</li>
+      <li data-filter=".filter-lien" class="text-white">Liens utiles</li>
+      <li data-filter=".filter-info" class="text-white">Notes d'information</li>
+      <li data-filter=".filter-video" class="text-white">Vidéos</li>
+    </ul>
+
+    <div
+      class="row portfolio-container"
+      data-aos="fade-up"
+      data-aos-delay="200"
+    >
+      <div class="col-lg-4 col-md-6 portfolio-item filter-lien">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/liens/sainte-mondane.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>Liens 1</h4>
+          <p>#Lorem Ipsum Dolor Sit
+          </p>
+          <a
+            href="https://saintemondane.fr"
+            target="_blank"
+            class="details-link"
+            title="Détails"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-info">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/liens/courrier archi-4.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>Note d'info</h4>
+          <p>#Lorem Ipsum Dolor Sit Am
+          </p>
+          <a
+            href="assets/img/liens/courrier archi-4.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox preview-link"
+            title="show room"
+            ><i class="bx bx-plus"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+        <div class="portfolio-img">
+          
+          <iframe width="330" height="315" src="https://www.youtube.com/embed/BWNKn2bI5wc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </div>
+        <div class="portfolio-info">
+          <h4>Vidéo 2</h4>
+          <p>Tutoriel compta générale</p>
+            <a
+            href="https://youtu.be/BWNKn2bI5wc"
+            class="details-link"
+            title="Détails"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-lien">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/liens/compta-gouv.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>lien 2</h4>
+          <p>#Lorem Ipsum Dolor Sit A
+          </p>
+          <a
+            href="https://www.economie.gouv.fr/facileco/quelques-notions-comptabilite"
+            target="_blank"
+            class="details-link"
+            title="Détails"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-info">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/liens/tva.png"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>info 2</h4>
+          <p>#Lorem Ipsum Dolor Sit Amet Consecte
+          </p>
+          <a
+            href="assets/img/liens/tva.pdf"
+            target="_blank"
+            class="details-link"
+            title="Détails"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-lien">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/portfolio/portfolio-6.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>App 3</h4>
+          <p>App</p>
+          <a
+            href="assets/img/portfolio/portfolio-6.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox preview-link"
+            title="App 3"
+            ><i class="bx bx-plus"></i
+          ></a>
+          <a
+            href="portfolio-details.html"
+            class="details-link"
+            title="More Details"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-video">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/portfolio/portfolio-7.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>Card 1</h4>
+          <p>Card</p>
+          <a
+            href="assets/img/portfolio/portfolio-7.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox preview-link"
+            title="Card 1"
+            ><i class="bx bx-plus"></i
+          ></a>
+          <a
+            href="portfolio-details.html"
+            class="details-link"
+            title="More Details"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-lien">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/portfolio/portfolio-8.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>Card 3</h4>
+          <p>Card</p>
+          <a
+            href="assets/img/portfolio/portfolio-8.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox preview-link"
+            title="Card 3"
+            ><i class="bx bx-plus"></i
+          ></a>
+          <a
+            href="portfolio-details.html"
+            class="details-link"
+            title="More Details"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+
+      <div class="col-lg-4 col-md-6 portfolio-item filter-info">
+        <div class="portfolio-img">
+          <img
+            src="assets/img/portfolio/portfolio-9.jpg"
+            class="img-fluid"
+            alt=""
+          />
+        </div>
+        <div class="portfolio-info">
+          <h4>Web 3</h4>
+          <p>Web</p>
+          <a
+            href="assets/img/portfolio/portfolio-9.jpg"
+            data-gallery="portfolioGallery"
+            class="portfolio-lightbox preview-link"
+            title="Web 3"
+            ><i class="bx bx-plus"></i
+          ></a>
+          <a
+            href="portfolio-details.html"
+            class="details-link"
+            title="More Details"
+            ><i class="bx bx-link"></i
+          ></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    <!-- End Portfolio Section -->    
     <!-- Contact-->
     <section class="page-section" id="contact">
       <div class="container px-4 px-lg-5">
@@ -612,7 +899,13 @@
     <!-- SimpleLightbox plugin JS-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <!-- Core theme JS-->
+    
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
 
     <script src="js/main.js"></script>
 
