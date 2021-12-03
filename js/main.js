@@ -294,5 +294,15 @@
         mirror: false
       });
     });
+
+    /* change logo on scroll */
+    $(window).scroll(function(){
+      if($(this).scrollTop()>1) {
+          $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
+      }
+      else {
+          $('#mainNav img').attr('src','assets/img/logo_comptesens-blanc.png');
+      }
+  });
   
   })()
