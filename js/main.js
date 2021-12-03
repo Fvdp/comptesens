@@ -296,13 +296,18 @@
     });
 
     /* change logo on scroll */
-    $(window).scroll(function(){
-      if($(this).scrollTop()>1) {
-          $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
-      }
-      else {
-          $('#mainNav img').attr('src','assets/img/logo_comptesens-blanc.png');
-      }
-  });
+    if (window.matchMedia("(min-width: 992px)").matches) {
+      $(window).scroll(function(){
+        if($(this).scrollTop()>1) {
+            $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
+        }
+        else {
+            $('#mainNav img').attr('src','assets/img/logo_comptesens-blanc.png');
+        }
+      });
+    };
+    if (window.matchMedia("(max-width: 992px)").matches) {
+      $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
+    };
   
   })()
