@@ -1,3 +1,4 @@
+document.body.onload =
 (function() {
     "use strict";
   
