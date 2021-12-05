@@ -309,5 +309,16 @@
     if (window.matchMedia("(max-width: 992px)").matches) {
       $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
     };
+
+    /* bouton en haut de page */
+    $(function () {
+      $(window).scroll(function () { //Fonction appelée quand on descend la page
+          if ($(this).scrollTop() > 600 ) {  // Quand on est à 00pixels du haut de page,
+              $('#scrollUp').css('right','1rem'); // Replace à 2rem de la droite l'image
+          } else { 
+              $('#scrollUp').removeAttr( 'style' ); // Enlève les attributs CSS affectés par javascript
+          }
+      });
+  });
   
   })()

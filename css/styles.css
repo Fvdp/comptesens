@@ -49,10 +49,10 @@
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 248, 249, 250;
   --bs-dark-rgb: 33, 37, 41;
-  --bs-orange-rgb: 244, 98, 58;
+  --bs-orange-rgb: 220, 147, 12;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
+  --bs-body-color-rgb: 31, 46, 71;
   --bs-body-bg-rgb: 255, 255, 255;
   --bs-font-sans-serif: 'Merriweather Sans', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
@@ -84,6 +84,30 @@
 .li-service {
   position: absolute;
   color: var(--bs-orange);
+}
+
+@media (min-width: 1080px) {
+  #scrollUp {
+    position: fixed;
+    font-size: 5rem;
+    bottom: 1rem;
+    right: -100px;
+    color: #dc930c;
+    opacity: 0.8;
+    z-index: 1;
+  }
+  .scrollUp {
+    color: #dc930c;
+  }
+}
+
+.portfolio-container {
+  width: 100%;
+}
+@media (max-width: 320px) {
+  .navbar-brand img {
+    width: 200px;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -181,7 +205,7 @@ body {
   font-size: var(--bs-body-font-size);
   font-weight: var(--bs-body-font-weight);
   line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
+  color: #1f2e47;
   text-align: var(--bs-body-text-align);
   background-color: var(--bs-body-bg);
   -webkit-text-size-adjust: 100%;
@@ -3271,19 +3295,20 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   color: #fff;
-  background-color: #6c757d;
-  border-color: #6c757d;
+  background-color: #dc930c;
+  border-color: #dc930c;
 }
 .btn-secondary:hover {
   color: #fff;
-  background-color: #5c636a;
-  border-color: #565e64;
+  background-color: #dc930c;
+  border-color: #fff;
+  box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
 }
 .btn-check:focus + .btn-secondary,
 .btn-secondary:focus {
   color: #fff;
-  background-color: #5c636a;
-  border-color: #565e64;
+  background-color: #dc930c;
+  border-color: #fff;
   box-shadow: 0 0 0 0.25rem rgba(130, 138, 145, 0.5);
 }
 .btn-check:checked + .btn-secondary,
@@ -3292,8 +3317,8 @@ fieldset:disabled .btn {
 .btn-secondary.active,
 .show > .btn-secondary.dropdown-toggle {
   color: #fff;
-  background-color: #565e64;
-  border-color: #51585e;
+  background-color: #dc930c;
+  border-color: #fff;
 }
 .btn-check:checked + .btn-secondary:focus,
 .btn-check:active + .btn-secondary:focus,
@@ -4137,6 +4162,11 @@ fieldset:disabled .btn {
   white-space: nowrap;
   background-color: transparent;
   border: 0;
+  font-family: 'Merriweather Sans', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 700;
+  font-size: 0.9rem;
 }
 .dropdown-item:hover,
 .dropdown-item:focus {
@@ -5055,7 +5085,6 @@ fieldset:disabled .btn {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 0 1rem 2rem;
   font-size: 1rem;
   color: #212529;
   background-color: #fff;
@@ -11931,7 +11960,7 @@ header.masthead .h1 {
   font-size: 15px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: #1f2e47;
   transition: all 0.3s;
   padding: 8px 10px;
   border-radius: 50px;

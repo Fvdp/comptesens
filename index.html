@@ -18,6 +18,10 @@
     <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
     <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <!-- Bootstrap css -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
     <!-- Google fonts-->
     <link
     href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
@@ -41,7 +45,7 @@
     <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
 
-    <!-- Core theme CSS (includes Bootstrap)-->
+    <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body id="page-top">
@@ -56,23 +60,30 @@
           class="navbar-toggler navbar-toggler-right"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto my-2 my-lg-0">
             <li class="nav-item">
               <a class="nav-link" href="#about">Qui sommes-nous ?</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#services" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Services
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item text-body" href="#expert">Expertise Comptable</a></li>
+                <li><a class="dropdown-item text-body" href="#disponible">Disponibilité</a></li>
+                <li><a class="dropdown-item text-body" href="#droit">Droit d'entreprise</a></li>
+              </ul>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Notes et info</a>
+              <a class="nav-link" href="#portfolio">Liens utiles</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -81,6 +92,10 @@
         </div>
       </div>
     </nav>
+<!-- Bouton vers le haut -->
+<div id="scrollUp">
+  <a href="#page-top"><i class="bi bi-arrow-up-short scrollUp"></i></a>
+</div>
 <!-- Masthead-->
     <header class="masthead">
       <div
@@ -194,11 +209,12 @@
                 <div class="member-info mt-4">
                   <h4>Christophe Ballouard</h4>
                   <hr class="divider" />
+                  <div>Expert comptable</div>
                   <div class="accordion accordion-flush">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingOne">
                         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                          Expert comptable
+                          
                         </button>
                       </h2>
                     <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
@@ -230,11 +246,12 @@
                 <div class="member-info mt-4">
                   <h4>Lionel Barbot</h4>
                   <hr class="divider" />
+                  <div>Comptable</div>
                   <div class="accordion accordion-flush">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingTwo">
                         <button class="accordion-button collapsed text-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                          Comptable Responsable région Dordogne
+                          
                         </button>
                       </h2>
                     <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
@@ -264,11 +281,11 @@
                 <div class="member-info mt-4">
                   <h4>Anne Ballouard</h4>
                   <hr class="divider" />
+                  <div>Juriste</div>
                   <div class="accordion accordion-flush">
                     <div class="accordion-item">
                       <h2 class="accordion-header" id="flush-headingThree">
-                        <button class="accordion-button collapsed text-end" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                          Juriste
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                         </button>
                       </h2>
                     <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
@@ -293,34 +310,56 @@
             <i class="bi bi-puzzle fs-1"></i>
             <h2>Expertise comptable</h2>
             <hr class="divider" />
-            <p class="text-muted">
-              <ul class="list-unstyled text-start text-muted">
+            <p class="mb-4 text-center">
+              Comptésens est une société qui propose un service de comptabilité, de fiscalité et de droit pour les entreprises individuelles, associations et les PME de moins de 100 salariés, qui comprend les missions suivantes :
+            </p>
+            <p class="">
+              <ul class="list-unstyled text-start">
                 <li>
                   <i class="li-service bi bi-check-lg"></i>
                   <p class="fw-light ps-5">
-                  Production de vos comptes annuels
+                    Production de vos comptes annuels avec ou sans tenue de comptabilité
                   </p>
                 </li>
                 <li>
                   <i class="li-service bi bi-check-lg"></i>
                   <p class="fw-light ps-5">
-                  Déclarations fiscales
+                    Déclarations fiscales (annuelle, TVA, etc.)
                   </p>
                 </li>
                 <li>
                   <i class="li-service bi bi-check-lg"></i>
                   <p class="fw-light ps-5">
-                  Bulletins de salaires, déclarations sociales et gestion du contrat de travail
+                    Production de vos bulletins de salaires, des déclarations sociales et de toutes les démarches liées à la gestion du contrat de travail de l’entrée à la sortie
                   </p>
                 </li>
                 <li>
                   <i class="li-service bi bi-check-lg"></i>
                   <p class="fw-light ps-5">
-                  Documents de gestion
+                    Etablissements de documents de gestion : tableau de bord, prévisionnel, analyse de marge
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                    Un accompagnement dans vos projets de création, de cession/acquisition, de cessation d’activité. Dans la recherche de financement
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                    Un accompagnement et un véritable savoir-faire en cas de difficultés, ou situation de crise (conciliation, sauvegarde, redressement, liquidation, négociation)
+                  </p>
+                </li>
+                <li>
+                  <i class="li-service bi bi-check-lg"></i>
+                  <p class="fw-light ps-5">
+                    Sécuriser financièrement votre activité, vous conseiller dans votre développement, mais aussi anticiper les difficultés et les gérer quand elles se présentent, négocier, discuter avec les administrations (Urssaf, impôt, caisses sociales, tiers, etc.), bref être à vos côtés pour que vous puissiez vous concentrer sur votre activité
                   </p>
                 </li>
               </ul>
             </p>
+            <a class="btn btn-primary text-white btn-xl mt-5" href="#">Contactez-nous maintenant !</a>
           </div>
         </div>
       </section>
@@ -328,38 +367,70 @@
 <!-- Disponibilité -->
       <section class="page-section bg-bleu text-white" id="disponible" data-aos="fade-up">
         <div class="container px-4 px-lg-5">
-          <div class="text-center mt-0 mb-5">
+          <div class="text-center mt-0 mb-1">
             <i class="bi bi-people-fill fs-1"></i>
             <h2>Disponibilité</h2>
             <hr class="divider" />
-            <p class="text-muted mb-0">
-              <ul class="list-unstyled text-start text-muted">
-                <li>
-                  <i class="li-service bi bi-check-lg"></i>
-                  <p class="fw-light text-white ps-5">
-                    Réponse dans les 72 heures                    
-                  </p>
-                </li>
-                <li>
-                  <i class="li-service bi bi-check-lg"></i>
-                  <p class="fw-light text-white ps-5">
-                  Accompagnement pour projets de création, cession, acquisition ou cessation d'activité
-                  </p>
-                </li>
-                <li>
-                  <i class="li-service bi bi-check-lg"></i>
-                  <p class="fw-light text-white ps-5">
-                  Accompagnement recherche financement
-                  </p>
-                </li>
-                <li>
-                  <i class="li-service bi bi-check-lg"></i>
-                  <p class="fw-light text-white ps-5">
-                  Accompagnement en situation de crise
-                  </p>
-                </li>
-              </ul>
+            <p class="text-white mb-4 text-center">
+              Nous avons fait le choix du 100% digital pour fluidifier, simplifier nos relations avec vous (adressage de documents, communication) afin de minimiser le temps consacrer au déclaratif et maximiser notre temps de conseil
             </p>
+              <p class="mb-4 text-white text-cente">
+                Nous aimons aller à la rencontre, créer une relation de confiance, durable et bienveillante. Pour nous, c’est le gage d’une relation de proximité pour que nous puissions réaliser le travail de qualité que vous attendez.  Et, au-delà des obligations déclaratives que nous prendrons en charge, nous souhaitons être à vos côtés pour vous écouter, vous questionner, vous conseiller et agir !
+              </p>
+              <div class="row">
+                <div
+                  class="col-xl-3 col-md-6 d-flex align-items-stretch"
+                  data-aos="zoom-in"
+                  data-aos-delay="100"
+                >
+                  <div class="icon-box text-center">
+                    <h4 class="bi bi-ear mx-2 text-white"> Écouter...</h4>
+                    <p>
+                      Vos besoins, vos attentes, ce à quoi vous avez pensé et réfléchi
+                    </p>
+                  </div>
+                </div>
+          
+                <div
+                  class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
+                  <div class="icon-box text-center">
+                    <h4 class="bi bi-question-circle mx-2 text-white"> Questionner...</h4>
+                    <p>
+                      La situation, le contexte, ce à quoi vous n’avez pas pensé
+                    </p>
+                  </div>
+                </div>
+          
+                <div
+                  class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+                  data-aos="zoom-in"
+                  data-aos-delay="300"
+                >
+                  <div class="icon-box text-center">
+                    <h4 class="bi bi-clipboard-check mx-2 text-white"> Conseiller...</h4>
+                    <p>
+                      la situation, le contexte, ce à quoi vous n’avez pas pensé
+                    </p>
+                  </div>
+                </div>
+          
+                <div
+                  class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+                  data-aos="zoom-in"
+                  data-aos-delay="400"
+                >
+                  <div class="icon-box text-center">
+                    <h4 class="bi bi-graph-up-arrow mx-2 text-white"> Agir...</h4>
+                    <p>
+                      Vous accompagner dans la mise en œuvre de vos projets, de vos obligations
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a class="btn btn-secondary text-white btn-xl my-5" href="#">Contactez-nous maintenant !</a>
           </div>
         </div>
       </section>
@@ -371,35 +442,78 @@
           <i class="bi bi-display fs-1"></i>
           <h2>Outils digitals</h2>
           <hr class="divider" />
+          <p class="text-muted mb-4 text-center">
+            Nous avons fait le pari de la digitalisation et de la dématérialisation pour gagner du temps et vous donner accès à toutes vos données, éléments, documents (factures, contrat, bilan, bulletin, etc.) où que vous soyez.
+            La dématérialisation, digitalisation de l’activité nous nous l’appliquons à nous-mêmes c’est ce qui nous permet aujourd’hui de pouvoir travailler à distance et sur des régions éloignées (Bretagne et Dordogne). 
+          </p>
           <p class="text-muted mb-0">
             <ul class="list-unstyled text-start text-muted">
               <li>
                 <i class="li-service bi bi-check-lg"></i>
                 <p class="fw-light ps-5">
-                Gain de temps et de productivité
+                  Mise à disposition de solution de comptabilité collaborative (client/Comptésens) avec les plates formes Cegidflow et Loop pour la comptabilité et Silae pour le social
                 </p>
               </li>
               <li>
                 <i class="li-service bi bi-check-lg"></i>
                 <p class="fw-light ps-5">
-                Vue comptable en temps réel et permanent
+                  Partage de vos documents permanents grâce à une GED partagée – Loop et Silae
                 </p>
               </li>
               <li>
                 <i class="li-service bi bi-check-lg"></i>
                 <p class="fw-light ps-5">
-                Fluidification du travail collaboratif
-                </p>
-              </li>
-              <li>
-                <i class="li-service bi bi-check-lg"></i>
-                <p class="fw-light ps-5">
-                Adaptation rapide aux nouvelles réglementations
+                  Nos échanges s’effectuent au moyen de l’outil collaboratif Teams
                 </p>
               </li>
             </ul>
           </p>
+          <div class="row text-muted mt-5">
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <div class="icon-box text-center">
+                <i class="bi bi-bar-chart-line fs-2"></i>
+                <h6 class="my-2">Gain de temps et de productivité</h6>
+              </div>
+            </div>
+      
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <div class="icon-box text-center">
+                <i class="bi bi-eye fs-2"></i>
+                <h6 class="my-2">Vue comptable en temps réel et permanent</h6>
+              </div>
+            </div>
+      
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="300"
+            >
+              <div class="icon-box text-center">
+                <i class="bi bi-arrow-left-right fs-2"></i>
+                <h6 class="my-2">Fluidification du travail collaboratif</h6>
+              </div>
+            </div>
+      
+            <div
+              class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
+              data-aos="zoom-in"
+              data-aos-delay="400"
+            >
+              <div class="icon-box text-center">
+                <i class="bi bi-ui-checks fs-2"></i>
+                <h6 class="my-2">Adaptation rapide aux nouvelles réglementations</h6>
+              </div>
+            </div>
         </div>
+        <a class="btn btn-primary text-white btn-xl mt-5" href="#">Contactez-nous maintenant !</a>
       </div>
     </section>
     <!-- End digital -->
@@ -413,101 +527,37 @@
           <p class="text-muted mb-0">
             #Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Eli
           </p>
+          <a class="btn btn-secondary text-white btn-xl my-5" href="#">Contactez-nous maintenant !</a>
         </div>
       </div>
     </section>
     <!-- End Droit -->
-<!-- Call to action-->
-<section class="page-section">
-  <div class="container px-4 px-lg-5 text-center" data-aos="zoom-in">
-    <div class="text-center mt-0 mb-5">
-      <p>
-        Prendre le temps d’écouter et de questionner, pour voir venir les changements.
-        <br>
-        Conseiller et agir pour accompagner ces changements
-      </p>
-    </div>
-    <div class="row">
-      <div
-        class="col-xl-3 col-md-6 d-flex align-items-stretch"
-        data-aos="zoom-in"
-        data-aos-delay="100"
-      >
-        <div class="icon-box text-center">
-          <h4><i class="bi bi-ear mx-2 text-primary"></i><a href="">Écouter...</a></h4>
-          <p>
-            Vos besoins, vos attentes, ce à quoi vous avez pensé et réfléchi
-          </p>
-        </div>
-      </div>
 
-      <div
-        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0"
-        data-aos="zoom-in"
-        data-aos-delay="200"
-      >
-        <div class="icon-box text-center">
-          <h4><i class="bi bi-question-circle mx-2 text-primary"></i><a href="">Questionner...</a></h4>
-          <p>
-            La situation, le contexte, ce à quoi vous n’avez pas pensé
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-        data-aos="zoom-in"
-        data-aos-delay="300"
-      >
-        <div class="icon-box text-center">
-          <h4><i class="bi bi-clipboard-check mx-2 text-primary"></i><a href="">Conseiller...</a></h4>
-          <p>
-            la situation, le contexte, ce à quoi vous n’avez pas pensé
-          </p>
-        </div>
-      </div>
-
-      <div
-        class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-xl-0"
-        data-aos="zoom-in"
-        data-aos-delay="400"
-      >
-        <div class="icon-box text-center">
-          <h4><i class="bi bi-graph-up-arrow mx-2 text-primary"></i><a href="">Agir...</a></h4>
-          <p>
-            Vous accompagner dans la mise en œuvre de vos projets, de vos obligations
-          </p>
-        </div>
-      </div>
-    </div>
-    <a class="btn btn-primary btn-xl" href="#">Contactez-nous maintenant !</a>
-  </div>
-</section>
 <!-- ======= Portfolio Section ======= -->
-<section id="portfolio" class="portfolio bg-primary page-section">
-  <div class="container px-4 px-lg-5" data-aos="fade-up">
-    <div class="text-center text-white mt-0 mb-5">
+<section id="portfolio" class="portfolio page-section">
+  <div class="container px-0 px-lg-5" data-aos="fade-up">
+    <div class="text-center mt-0 mb-5">
       <h2>Liens utiles</h2>
       <hr class="divider" />
-      <p class="text-white mb-0">
+      <p class="mb-0">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
       </p>
     </div>
 
     <ul
       id="portfolio-flters"
-      class="d-flex text-white justify-content-center"
+      class="text-center ps-0"
       data-aos="fade-up"
       data-aos-delay="100"
     >
-      <li data-filter="*" class="filter-active text-white">Tout afficher</li>
-      <li data-filter=".filter-lien" class="text-white">Liens utiles</li>
-      <li data-filter=".filter-info" class="text-white">Notes d'information</li>
-      <li data-filter=".filter-video" class="text-white">Vidéos</li>
+      <li data-filter="*" class="filter-active">Tout afficher</li>
+      <li data-filter=".filter-lien">Liens utiles</li>
+      <li data-filter=".filter-info">Notes d'information</li>
+      <li data-filter=".filter-video">Vidéos</li>
     </ul>
 
     <div
-      class="row portfolio-container"
+      class="row portfolio-container align-items-center mx-auto"
       data-aos="fade-up"
       data-aos-delay="200"
     >
@@ -729,7 +779,7 @@
 </section>
     <!-- End Portfolio Section -->    
     <!-- Contact-->
-    <section class="page-section" id="contact">
+    <section class="page-section bg-primary" id="contact">
       <div class="container px-4 px-lg-5">
         <div
           class="row gx-4 gx-lg-5 justify-content-center"
@@ -738,9 +788,9 @@
           data-aos-duration="1500"
         >
           <div class="col-lg-8 col-xl-6 text-center">
-            <h2 class="mt-0">Restons en contact</h2>
+            <h2 class="mt-0 text-white">Restons en contact</h2>
             <hr class="divider" />
-            <p class="text-muted mb-5">
+            <p class="mb-5 text-white">
               Nous sommes prêts à vous accompagner, contactez-nous maintenant !
             </p>
           </div>
@@ -849,7 +899,7 @@
               <!-- Submit Button-->
               <div class="d-grid">
                 <button
-                  class="btn btn-primary btn-xl disabled"
+                  class="btn btn-secondary btn-xl disabled text-white"
                   id="submitButton"
                   type="submit"
                 >
@@ -861,17 +911,17 @@
         </div>
         <div class="row gx-4 gx-lg-5 justify-content-center">
           <div class="col-lg-4 text-center mb-5 mb-lg-0">
-            <i class="bi-phone fs-2 mb-3 text-muted"></i>
-            <div>+33 6 06 06 06 06</div>
+            <i class="bi-phone fs-2 mb-3 text-white"></i>
+            <div class="text-white">+33 6 06 06 06 06</div>
           </div>
         </div>
       </div>
     </section>
     <!-- Footer-->
-    <footer class="bg-bleu py-5">
+    <footer class="py-5">
       <div class="container px-4 px-lg-5">
-        <div class="small text-center text-white">
-          Copyright &copy; 2021 - ComptéSens
+        <div class="small text-center">
+          Copyright &copy; 2021 - ComptéSens - <a href="#">Mentions Légales</a>
         </div>
       </div>
     </footer>
@@ -887,12 +937,7 @@
       AOS.init()
     </script>
     <!-- Bootstrap core JS-->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
-      crossorigin="anonymous"
-    ></script>
-    <script
+     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
       integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
       crossorigin="anonymous"
