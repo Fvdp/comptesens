@@ -205,6 +205,9 @@ document.body.onload =
         preloader.remove()
       });
     }
+
+    var img = new Image();
+    img.src="assets/img/logo_comptesens-250x46.png";
   
     /**
      * Initiate  glightbox 
@@ -310,6 +313,25 @@ document.body.onload =
     if (window.matchMedia("(max-width: 992px)").matches) {
       $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
     };
+
+/*     function preloader()
+{
+     // Compteur
+     var i = 0;
+
+     // Créer l'objet
+     imageObj = new Image();
+
+     // Définir la liste d'images
+     images = new Array();
+     images[0]="assets/img/logo_comptesens-250x46.png"
+
+     // Démarrer le préchargement
+     for(i=0; i<=3; i++)
+     {
+          imageObj.src=images[i];
+     }
+}  */
 
     /* bouton en haut de page */
     $(function () {
