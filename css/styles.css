@@ -11912,8 +11912,8 @@ header.masthead {
   padding-bottom: calc(10rem - 4.5rem);
   background: linear-gradient(
       to bottom,
-      rgba(51, 51, 51, 0.7) 0%,
-      rgba(51, 51, 51, 0.7) 100%
+      rgba(123, 112, 89, 0.20) 0%,
+      rgba(102, 98, 98, 0.7) 100%
     ),
     url('../assets/img/3experts.jpg');
   background-position: center;
@@ -11934,6 +11934,7 @@ header.masthead .h1 {
   }
   header.masthead p {
     font-size: 1.15rem;
+    text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
   }
   header.masthead h1,
   header.masthead .h1 {
@@ -11944,6 +11945,7 @@ header.masthead .h1 {
   header.masthead h1,
   header.masthead .h1 {
     font-size: 3.5rem;
+    text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
   }
 }
 /*--------------------------------------------------------------
