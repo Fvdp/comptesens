@@ -34,7 +34,7 @@
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
   --bs-primary: #37517e;
-  --bs-secondary: #050505;
+  --bs-secondary: #dc930c;
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #ffc107;
@@ -42,7 +42,7 @@
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
   --bs-primary-rgb: 55, 81, 126;
-  --bs-secondary-rgb: 108, 117, 125;
+  --bs-secondary-rgb: 238, 158, 9;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -104,10 +104,21 @@
 .portfolio-container {
   width: 100%;
 }
+
 @media (max-width: 320px) {
   .navbar-brand img {
     width: 200px;
   }
+  .engagement-choix {
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  
+}
+
+.engagement-choix {
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 /*--------------------------------------------------------------
@@ -388,7 +399,7 @@ a {
   text-decoration: none;
 }
 a:hover {
-  color: #37517e;
+  color: #ee9e09;
 }
 
 a:not([href]):not([class]),
@@ -5101,9 +5112,8 @@ fieldset:disabled .btn {
   }
 }
 .accordion-button:not(.collapsed) {
-  color: #dc5834;
-  background-color: #feefeb;
   box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  background-color: white;
 }
 .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23dc5834'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
@@ -5131,9 +5141,9 @@ fieldset:disabled .btn {
 }
 .accordion-button:focus {
   z-index: 3;
-  border-color: #fab19d;
+  border-color: #37507d;
   outline: 0;
-  box-shadow: 0 0 0 0.25rem rgba(244, 98, 58, 0.25);
+  box-shadow: none;
 }
 
 .accordion-header {
@@ -11863,10 +11873,10 @@ hr.divider-light {
 }
 #mainNav .navbar-nav .nav-item .nav-link:hover,
 #mainNav .navbar-nav .nav-item .nav-link:active {
-  color: #1f2e47;
+  color: #ee9e09;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active {
-  color: #1f2e47 !important;
+  color: #ee9e09 !important;
 }
 @media (min-width: 992px) {
   #mainNav {
@@ -11924,7 +11934,13 @@ header.masthead {
 header.masthead h1,
 header.masthead .h1 {
   font-size: 2.25rem;
+  text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
 }
+header.masthead p {
+  font-size: 1.15rem;
+  text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
+}
+
 @media (min-width: 992px) {
   header.masthead {
     height: 100vh;
@@ -11939,6 +11955,7 @@ header.masthead .h1 {
   header.masthead h1,
   header.masthead .h1 {
     font-size: 3rem;
+    text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
   }
 }
 @media (min-width: 1200px) {
@@ -11947,6 +11964,11 @@ header.masthead .h1 {
     font-size: 3.5rem;
     text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
   }
+  header.masthead p {
+    font-size: 1.15rem;
+    text-shadow: 0.1em 0.1em 0.2em rgba(64, 53, 38);
+  }
+
 }
 /*--------------------------------------------------------------
 # Portfolio
