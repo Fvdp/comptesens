@@ -101,6 +101,20 @@
   }
 }
 
+@media (max-width: 1080px){
+  #mainNav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+  }
+
+  #scrollUp {
+    display: none;
+  }
+}
+
 .portfolio-container {
   width: 100%;
 }

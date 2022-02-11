@@ -300,7 +300,7 @@ document.body.onload =
     });
 
     /* change logo on scroll */
-    if (window.matchMedia("(min-width: 992px)").matches) {
+    if (window.matchMedia("(min-width: 1201px)").matches) {
       $(window).scroll(function(){
         if($(this).scrollTop()>1) {
             $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
@@ -310,7 +310,7 @@ document.body.onload =
         }
       });
     };
-    if (window.matchMedia("(max-width: 992px)").matches) {
+    if (window.matchMedia("(max-width: 1200px)").matches) {
       $('#mainNav img').attr('src','assets/img/logo_comptesens-250x46.png');
     };
 
