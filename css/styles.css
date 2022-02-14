@@ -103,7 +103,6 @@
 
 @media (max-width: 1080px){
   #mainNav {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0;
@@ -128,6 +127,12 @@
     margin-right: 5%;
   }
   
+}
+
+@media (max-width: 990px) {
+ .image  {
+   content: url('/assets/img/logo_comptesens-250x46.png');
+ }
 }
 
 .engagement-choix {

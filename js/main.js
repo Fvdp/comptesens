@@ -87,7 +87,7 @@ document.body.onload =
   // Collapse responsive navbar when toggler is visible
   const navbarToggler = document.body.querySelector('.navbar-toggler');
   const responsiveNavItems = [].slice.call(
-      document.querySelectorAll('#navbarResponsive .nav-link')
+      document.querySelectorAll('#navbarResponsive .shrink-index, #navbarResponsive .shrink-qui, #navbarResponsive .shrink-comptable, #navbarResponsive .shrink-sociale, #navbarResponsive .shrink-droit, #navbarResponsive .shrink-conseils, #navbarResponsive .shrink-engagement, #navbarResponsive .shrink-outils, #navbarResponsive .shrink-contact, #navbarResponsive .shrink-doc')
   );
   responsiveNavItems.map(function (responsiveNavItem) {
       responsiveNavItem.addEventListener('click', () => {
