@@ -47,6 +47,10 @@
 
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- RGPD -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+
   </head>
   <body id="page-top">
 <!-- Navigation-->
@@ -811,5 +815,29 @@
     <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
     <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <!-- RGPD -->
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+    <script>
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#37517e",
+          "text": "#ffffff"
+        },
+        "button": {
+          "background": "#ee9e09",
+          "text": "#ffffff"
+        }
+      },
+      "theme": "edgeless",
+      "content": {
+        "message": "En navigant sur notre site, vous acceptez l'utilisation de cookies pour vous proposer une navigation optimale et nous permettre de réaliser des statistiques de visites.",
+        "dismiss": "OK",
+        "link": "En savoir +",
+        "href": "https://www.beta.comptesens.fr/mentions.html"
+      }
+    });
+    </script>
   </body>
 </html>

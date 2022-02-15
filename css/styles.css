@@ -135,6 +135,12 @@
  }
 }
 
+@media (min-width: 990px) {
+  .image-liens  {
+    content: url('/assets/img/logo_comptesens-blanc.png');
+  }
+ }
+
 .engagement-choix {
   margin-left: 15%;
   margin-right: 15%;
