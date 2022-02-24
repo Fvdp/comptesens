@@ -113,7 +113,7 @@
 
 // Captcha Google (voir header pour clé publique !)
 // Ma clé privée
-$secret = "6LcklpseAAAAAD9kP6JWhevXk2xQVGsx0ooisT-T";
+$secret = "XXXXXXXXXXXXXXXXXXXXXXXXXXXX";
 // Paramètre renvoyé par le recaptcha
 $response = $_POST['g-recaptcha-response'];
 // On récupère l'IP de l'utilisateur
