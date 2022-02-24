@@ -47,6 +47,7 @@
 
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+
   </head>
   <body id="page-top">
 <!-- Navigation-->
@@ -110,8 +111,22 @@
     <!-- End head -->
 <?php
 
+// Captcha Google (voir header pour clé publique !)
+// Ma clé privée
+$secret = "6LcklpseAAAAAD9kP6JWhevXk2xQVGsx0ooisT-T";
+// Paramètre renvoyé par le recaptcha
+$response = $_POST['g-recaptcha-response'];
+// On récupère l'IP de l'utilisateur
+$remoteip = $_SERVER['REMOTE_ADDR'];
+// paramètres à passe dans l'url
+$api_url = "https://www.google.com/recaptcha/api/siteverify?secret=" 
+        . $secret
+        . "&response=" . $response
+        . "&remoteip=" . $remoteip ;
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
 
 require 'assets/vendor/PHPMailer-master/src/Exception.php';
 require 'assets/vendor/PHPMailer-master/src/PHPMailer.php';
@@ -123,47 +138,94 @@ $email = $_POST['email'];
 $phone = $_POST['phone'];
 $message = $_POST['message'];
 
-echo "<strong>votre nom : </strong>".$nom;
-echo "<br>";
-echo "<strong>votre entreprise : </strong>".$company;
-echo "<br>";
-echo "<strong>votre email : </strong>".$email;
-echo "<br>";
-echo "<strong>votre téléphone </strong>: ".$phone;
-echo "<br>";
-echo "<strong>votre message : </strong>".$message;
-echo "<br>";
-echo "<br>";
-echo "<br>";
+$body = "
+<html>
+    <head>
+        <body>
+        <h4>Message du formulaire de contact sur www.comptesens.fr</h4>
+            <table width='500px'>
+                <tr>
+                    <td width=25%' align='left'>Le nom (et pr&eacute;nom) : </td>
+                    <td align='left'>$nom</td>
+                </tr>
+                <tr>
+                    <td width=25%' align='left'>Entreprise : </td>
+                    <td align='left'>$company</td>
+                </tr>
+                <tr>
+                    <td width=25%' align='left'>L'email : </td>
+                    <td align='left'>$email</td>
+                </tr>
+                <tr>
+                    <td width=25%' align='left'>L'email : </td>
+                    <td align='left'>$phone</td>
+                </tr>
+                <tr>
+                    <td width=25%' valign='top' align='left'>Le message : </td>
+                    <td align='left'>$message</td>
+                </tr>
+            </table>
+        </body>
+    </head>
+</html>
+";
 
 $mail = new PHPMailer();
-$mail->IsSMTP();
-$mail->Host = 'ssl0.ovh.net';               //Adresse IP ou DNS du serveur SMTP
-$mail->Port = 465;                          //Port TCP du serveur SMTP
-$mail->SMTPAuth = 1;                        //Utiliser l'identification
+
+$mail -> SMTPDebug  =  SMTP :: DEBUG_SERVER ; 
+$mail -> SMTPDebug  =  0 ;    
+$mail->IsSMTP();                    // dire à la classe d'utiliser SMTP
+$mail->Host = 'ns0.ovh.net';               //Adresse IP ou DNS du serveur SMTP
+$mail->Port = 587;                          //Port TCP du serveur SMTP
+$mail->SMTPAuth = true;                        //Utiliser l'identification
 $mail->CharSet = 'UTF-8';
 
 if($mail->SMTPAuth){
-   $mail->SMTPSecure = 'ssl';               //Protocole de sécurisation des échanges avec le SMTP
-   $mail->Username   =  'login@ovh.net';    //Adresse email à utiliser
-   $mail->Password   =  'password';         //Mot de passe de l'adresse email à utiliser
+   $mail->SMTPSecure = 'tls';               //Protocole de sécurisation des échanges avec le SMTP
+   $mail->Username   =  'siteweb@2venirconseil.fr';    //Adresse email à utiliser
+   $mail->Password   =  'grWs7xeLBPhaFdg';         //Mot de passe de l'adresse email à utiliser
 }
 
-$mail->From       = trim($_POST["email"]);                //L'email à afficher pour l'envoi
-/* $mail->FromName   = trim($_POST["email_from_alias"]);          //L'alias de l'email de l'emetteur
- */
-/* $mail->AddAddress(trim($_POST["email_to"]));
- */
-$mail->Subject    =  "Email du site Comptesens.fr";                      //Le sujet du mail
+$mail->From = "contact@comptesens.fr";
+$mail->FromName = "Comptesens";
+$mail->Body = "$body";
+
+$mail->AddAddress('contact@comptesens.fr');   // L'email envoyé à ...
+$mail->addCC('siteweb@2venirconseil.fr');   // en copie
+$mail->addBCC('contact@fvwebsite.com');   // Copie 
+
+$mail->Subject    =  "formulaire de contact comptesens.fr";                      //Le sujet du mail
 $mail->WordWrap   = 50; 			       //Nombre de caracteres pour le retour a la ligne automatique
-$mail->AltBody = $_POST["message"]; 	       //Texte brut
-$mail->IsHTML(false);                                  //Préciser qu'il faut utiliser le texte brut
+$mail->IsHTML(true);                                  //Préciser qu'il faut utiliser le texte brut
 
 if (!$mail->send()) {
       echo $mail->ErrorInfo;
 } else{
-      echo 'Message bien envoyé';
+      echo '
+        <div class="text-center m-5">
+        <h4>Votre message a bien été envoyé</h4>
+        </div>
+      ';
 }
+echo "
+<div class='m-4'>
+  <p>
+  <strong>votre nom : </strong>$nom
+  </p>
+  <p>
+  <strong>votre entreprise : </strong>$company
+  </p>
+  <p>
+  <strong>votre email : </strong>$email
+  </p>
+  <p>
+  <strong>votre téléphone </strong>$phone
+  </p>
+  <p>
+  <strong>votre message : </strong>$message
+  </p>
+</div>
+";
 ?>
 <!-- Footer-->
     <footer class="border-top py-5">

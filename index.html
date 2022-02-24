@@ -50,6 +50,10 @@
 
     <!-- RGPD -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-113480105-1"></script>
+
+    <!-- Recaptcha Google -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
   </head>
   <body id="page-top">
@@ -703,6 +707,8 @@
                 ></textarea>
                 <label for="message">Message</label>
               </div>
+              <!-- Boite Captcha -->
+              <div class="g-recaptcha pb-3" data-sitekey="6LcklpseAAAAAE58HAjrs2CVItkwMAMXGSW9O3N_"></div>
               <!-- Submit Button-->
               <div class="d-grid">
                 <input
@@ -767,6 +773,11 @@
 
     <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
 
+    <!-- reCaptcha Google -->
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+    </script>
+   
     <!-- RGPD -->
     <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
     <script>
